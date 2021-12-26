@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "serverless-project-example"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-nkn7q3j6w3nc"
+s3_prefix = "serverless-project-example"
+region = "us-west-1"
+capabilities = "CAPABILITY_IAM"
+image_repositories = []
