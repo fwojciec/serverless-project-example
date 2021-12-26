@@ -9,6 +9,11 @@ test:
 mypy: $(FUNCTION_DIRS)
 	$(foreach d, $(FUNCTION_DIRS), python -m mypy $(d);)
 
+.PHONY: develop
+develop:
+	python -m pip install --editable .
+	python -m pip install -U -r requirements-dev.txt
+
 .PHONY: build
 build:
 	rm -rf dist || true

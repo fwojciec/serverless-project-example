@@ -2,10 +2,12 @@
 
 Example code for the blog post at [https://w11i.me/how-to-structure-a-python-serverless-project](https://w11i.me/how-to-structure-a-python-serverless-project).
 
-## Installing development dependencies
+## Developing
+
+To prepare the project for local development it's necessary to install the shared package in editable mode and install the dev dependencies. Run:
 
 ```
-python -m pip install -U -r requirements-dev.txt
+make develop
 ```
 
 ## Running tests
