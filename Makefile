@@ -1,4 +1,4 @@
-FUNCTION_DIRS := $(shell find functions layer ! -path '*.egg-info*' -type d -maxdepth 1 -mindepth 1 | xargs)
+MYPY_DIRS := $(shell find functions layer ! -path '*.egg-info*' -type d -maxdepth 1 -mindepth 1 | xargs)
 ARTIFACTS_DIR ?= build
 
 .PHONY: test
@@ -6,8 +6,8 @@ test:
 	pytest
 
 .PHONY: mypy
-mypy: $(FUNCTION_DIRS)
-	$(foreach d, $(FUNCTION_DIRS), python -m mypy $(d);)
+mypy: $(MYPY_DIRS)
+	$(foreach d, $(MYPY_DIRS), python -m mypy $(d);)
 
 .PHONY: develop
 develop:
