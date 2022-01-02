@@ -1,12 +1,12 @@
 import json
 from typing import Any, Dict
 
-from serverless_project.count import Math
+from shared.math import Addition
 
 
 def handler(event: Dict[str, Any], _: object) -> Dict[str, Any]:
-    math = Math()
-    result = math.add(event["a"], event["b"])
+    addition = Addition()
+    result = addition.add(event["a"], event["b"])
     return {
         "statusCode": 200,
         "headers": {"Content-Type": "application/json"},

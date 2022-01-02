@@ -1,12 +1,12 @@
 import json
 from typing import Any, Dict
 
-from serverless_project.count import Math
+from shared.math import Multiplication
 
 
 def handler(event: Dict[str, Any], _: object) -> Dict[str, Any]:
-    math = Math()
-    result = math.multiply(event["a"], event["b"])
+    multiplication = Multiplication()
+    result = multiplication.multiply(event["a"], event["b"])
     return {
         "statusCode": 200,
         "body": json.dumps({"answer": result}),
