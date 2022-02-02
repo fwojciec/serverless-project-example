@@ -1,6 +1,6 @@
 # serverless-project-example
 
-Example code for the blog post at [https://w11i.me/how-to-structure-a-python-serverless-project](https://w11i.me/how-to-structure-a-python-serverless-project).
+Example code for the blog post at [https://w11i.me/how_to_structure_a_python_aws_serverless_project](https://w11i.me/how_to_structure_a_python_aws_serverless_project).
 
 ## Developing
 
